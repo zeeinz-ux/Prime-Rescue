@@ -15,7 +15,7 @@ export default function ContactCta() {
             Hubungi Prima Rescue 24/7 melalui WhatsApp.
           </p>
           <WhatsAppButton variant="onRed" trackLabel="contact_cta" className="mt-8 h-12 px-8 text-base">
-            Hubungi WhatsApp +62 857-7091-8098
+            Hubungi WhatsApp
           </WhatsAppButton>
           <div className="mt-10 space-y-3 text-sm text-clinical-white/90">
             <p className="flex flex-col items-center gap-2 sm:flex-row">
