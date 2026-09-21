@@ -119,10 +119,7 @@ export default function Gallery() {
           </div>
         </div>
 
-        <p className="mt-4 flex items-center justify-center gap-2 text-sm text-slate-gray">
-          <Icon name="chevron" className="h-4 w-4 rotate-90" />
-          Geser ke kiri/kanan untuk melihat foto lain
-        </p>
+        {/* Hapus elemen <p> */}
       </Container>
     </section>
   );

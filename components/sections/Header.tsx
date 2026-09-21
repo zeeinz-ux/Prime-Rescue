@@ -65,7 +65,7 @@ export default function Header() {
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => trackWhatsAppClick("header")}
-            className="inline-flex h-11 items-center gap-2 rounded-lg bg-emergency-red px-6 text-sm font-semibold transition-colors hover:bg-red-700"
+            className="inline-flex h-11 items-center gap-2 rounded-lg bg-emergency-red px-6 text-sm font-semibold text-white transition-colors hover:bg-red-700"
           >
             <Icon name="whatsapp" className="h-4 w-4" />
             Hubungi Sekarang
@@ -75,7 +75,7 @@ export default function Header() {
         <button
           type="button"
           onClick={() => setOpen((v) => !v)}
-          className="flex h-11 w-11 items-center justify-center text-white md:hidden"
+          className={`flex h-11 w-11 items-center justify-center md:hidden ${scrolled ? "text-white" : "text-navy-dark"}`}
           aria-label={open ? "Tutup menu" : "Buka menu"}
           aria-expanded={open}
         >
@@ -104,7 +104,7 @@ export default function Header() {
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => trackWhatsAppClick("header_mobile")}
-              className="mt-2 inline-flex h-11 items-center justify-center gap-2 rounded-lg bg-emergency-red px-6 text-sm font-semibold"
+              className="mt-2 inline-flex h-11 items-center justify-center gap-2 rounded-lg bg-emergency-red px-6 text-sm font-semibold text-white"
             >
               <Icon name="whatsapp" className="h-4 w-4" />
               Hubungi Sekarang
