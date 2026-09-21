@@ -3,7 +3,7 @@ import { BUSINESS } from "@/data/businessInfo";
 function localBusinessSchema() {
   return {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": "EmergencyService",
     name: BUSINESS.name,
     description: "Layanan ambulans 24 jam di Gunung Sindur, Bogor",
     url: BUSINESS.url,
