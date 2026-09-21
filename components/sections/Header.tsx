@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react";
 import Container from "@/components/ui/Container";
 import Icon from "@/components/ui/Icon";
-import WhatsAppButton from "@/components/ui/WhatsAppButton";
 import { BUSINESS } from "@/data/businessInfo";
 import { trackWhatsAppClick } from "@/lib/gtag";
 

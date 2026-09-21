@@ -2,6 +2,7 @@ import Image from "next/image";
 import Container from "@/components/ui/Container";
 import Icon from "@/components/ui/Icon";
 import WhatsAppButton from "@/components/ui/WhatsAppButton";
+import armadaImg from "@/public/images/armada-1.webp";
 
 const TRUST_POINTS = ["Operasional 24/7", "Tim Terlatih", "Respons Cepat"];
 
@@ -33,10 +34,8 @@ export default function Hero() {
 
           <div className="lg:order-1">
             <Image
-              src="/images/armada-1.webp"
+              src={armadaImg}
               alt="Ambulans Prima Rescue siap melayani 24 jam di Gunung Sindur, Bogor"
-              width={1600}
-              height={800}
               priority
               sizes="(min-width: 1024px) 50vw, 100vw"
               className="rounded-lg object-cover shadow-lg"

@@ -69,7 +69,7 @@ export default function Gallery() {
             style={{ transform: `translateX(-${index * 100}%)` }}
           >
             {GALLERY_PHOTOS.map((photo) => (
-                    <div key={photo.src} className="relative aspect-[2/1] w-full shrink-0">
+                    <div key={photo.caption} className="relative aspect-[2/1] w-full shrink-0">
                 <Image
                   src={photo.src}
                   alt={photo.alt}
@@ -106,7 +106,7 @@ export default function Gallery() {
           <div className="absolute bottom-4 left-1/2 flex -translate-x-1/2 gap-2">
             {GALLERY_PHOTOS.map((photo, dotIndex) => (
               <button
-                key={photo.src}
+                key={photo.caption}
                 type="button"
                 onClick={() => setIndex(dotIndex)}
                 aria-label={`Lihat foto ${dotIndex + 1}`}
