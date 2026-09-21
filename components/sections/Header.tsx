@@ -36,11 +36,11 @@ export default function Header() {
         <a
           href="#beranda"
           className={`flex items-center gap-2 text-lg font-semibold transition-colors ${
-            scrolled ? "text-white" : "text-navy-dark"
+            scrolled || open ? "text-white" : "text-navy-dark"
           }`}
         >
           <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-emergency-red">
-            <Icon name="cross" className={`h-5 w-5 ${scrolled ? "text-white" : "text-navy-dark"}`} />
+            <Icon name="cross" className="h-5 w-5 text-white" />
           </span>
           Prima Rescue
         </a>
