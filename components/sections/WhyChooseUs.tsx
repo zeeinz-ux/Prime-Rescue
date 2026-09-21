@@ -22,14 +22,16 @@ const VALUES = [
 
 export default function WhyChooseUs() {
   return (
-    <section id="keunggulan" className="bg-background-soft py-12 md:py-16">
+    <section id="keunggulan" className="bg-background-soft py-16 md:py-24">
       <Container>
         <SectionHeading title="Mengapa Memilih Prima Rescue?" />
         <div className="grid gap-10 sm:grid-cols-3 sm:gap-6">
           {VALUES.map((value) => (
             <div key={value.title} className="max-w-[300px]">
-              <Icon name={value.icon} className="h-10 w-10 text-navy-dark" />
-              <h3 className="mt-4 text-xl font-semibold text-navy-dark">
+              <div className="flex h-16 w-16 items-center justify-center rounded-lg bg-white shadow-sm">
+                <Icon name={value.icon} className="h-8 w-8 text-medical-green" />
+              </div>
+              <h3 className="mt-6 text-xl font-semibold text-navy-dark">
                 {value.title}
               </h3>
               <p className="mt-2 text-base leading-relaxed text-slate-gray">

@@ -8,7 +8,7 @@ const TRUST_POINTS = ["Operasional 24/7", "Tim Terlatih", "Respons Cepat"];
 
 export default function Hero() {
   return (
-    <section id="beranda" className="bg-clinical-white py-12 md:py-16">
+    <section id="beranda" className="bg-clinical-white py-16 md:py-24">
       <Container>
         <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
           <div className="lg:order-2">

@@ -26,7 +26,7 @@ const STEPS = [
 
 export default function HowItWorks() {
   return (
-    <section id="cara-pesan" className="bg-clinical-white py-12 md:py-16">
+    <section id="cara-pesan" className="bg-clinical-white py-16 md:py-24">
       <Container>
         <SectionHeading
           title="Cara Pesan Layanan Ambulans"

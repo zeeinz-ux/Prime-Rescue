@@ -50,7 +50,7 @@ export default function Gallery() {
   };
 
   return (
-    <section id="galeri" className="bg-white py-12 md:py-16">
+    <section id="galeri" className="bg-white py-16 md:py-24">
       <Container>
         <SectionHeading
           title="Galeri Tim & Armada Kami"

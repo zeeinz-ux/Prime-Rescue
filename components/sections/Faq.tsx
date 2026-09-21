@@ -5,7 +5,7 @@ import { FAQS } from "@/data/faqs";
 
 export default function Faq() {
   return (
-    <section id="faq" className="bg-white py-12 md:py-16">
+    <section id="faq" className="bg-white py-16 md:py-24">
       <Container>
         <SectionHeading
           title="Pertanyaan Umum"

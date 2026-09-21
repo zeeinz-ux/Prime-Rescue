@@ -21,7 +21,7 @@ const QUICK_INFO = [
 
 export default function QuickInfo() {
   return (
-    <section id="info" className="bg-white py-12 md:py-16">
+    <section id="info" className="bg-white py-16 md:py-24">
       <Container>
         <div className="grid gap-6 md:grid-cols-3">
           {QUICK_INFO.map((item) => (

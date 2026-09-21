@@ -21,7 +21,7 @@ const MAP_DIRECTIONS_URL =
 
 export default function ServiceArea() {
   return (
-    <section id="jangkauan" className="bg-white py-12 md:py-16">
+    <section id="jangkauan" className="bg-white py-16 md:py-24">
       <Container>
         <SectionHeading
           title="Area Pelayanan Kami"

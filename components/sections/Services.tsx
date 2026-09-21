@@ -5,7 +5,7 @@ import { SERVICES } from "@/data/services";
 
 export default function Services() {
   return (
-    <section id="layanan" className="bg-clinical-white py-12 md:py-16">
+    <section id="layanan" className="bg-clinical-white py-16 md:py-24">
       <Container>
         <SectionHeading
           title="Layanan Kami"
