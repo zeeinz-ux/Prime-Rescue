@@ -69,7 +69,7 @@ export default function Footer() {
 
         <div className="mt-12 flex flex-col items-center justify-between gap-2 border-t border-white/10 pt-6 text-xs text-clinical-white/50 sm:flex-row">
           <p>© {new Date().getFullYear()} Prima Rescue. All rights reserved.</p>
-          <p>Developed with care for your safety.</p>
+          <p>Crafted by SixLabs</p>
         </div>
       </Container>
     </footer>
