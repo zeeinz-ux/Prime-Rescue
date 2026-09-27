@@ -17,7 +17,7 @@ export default function FloatingCta() {
         href={`tel:${BUSINESS.phoneE164}`}
         onClick={() => trackPhoneClick("floating_cta")}
         aria-label={`Hubungi Kami via telepon ${BUSINESS.whatsappDisplay}`}
-        className={`${BASE_BUTTON_CLASSES} bg-blue-600 hover:bg-blue-700`}
+        className={`${BASE_BUTTON_CLASSES} bg-navy-dark hover:bg-slate-800`}
       >
         <Icon name="phone" className="h-4 w-4 shrink-0 md:h-5 md:w-5" />
         Hubungi Kami
