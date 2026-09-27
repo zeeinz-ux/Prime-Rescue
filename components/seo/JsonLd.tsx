@@ -8,6 +8,7 @@ function localBusinessSchema() {
     description: "Layanan ambulans 24 jam di Gunung Sindur, Bogor",
     url: BUSINESS.url,
     telephone: BUSINESS.phoneE164,
+    hasMap: BUSINESS.mapsLink,
     address: {
       "@type": "PostalAddress",
       streetAddress: BUSINESS.address.street,
@@ -34,6 +35,11 @@ function localBusinessSchema() {
       { "@type": "City", name: "Gunung Sindur" },
       { "@type": "City", name: "Bogor" },
     ],
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: BUSINESS.latitude,
+      longitude: BUSINESS.longitude,
+    },
   };
 }
 

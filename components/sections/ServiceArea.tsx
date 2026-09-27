@@ -10,14 +10,9 @@ const EXTENDED_AREAS = [
   "Jakarta Selatan",
 ];
 
-const MAP_EMBED_URL =
-  "https://maps.google.com/maps?q=" +
-  encodeURIComponent(BUSINESS.addressText) +
-  "&t=&z=13&ie=UTF8&iwloc=&output=embed";
+const MAP_EMBED_URL = BUSINESS.mapsEmbedUrl;
 
-const MAP_DIRECTIONS_URL =
-  "https://www.google.com/maps/search/?api=1&query=" +
-  encodeURIComponent(BUSINESS.addressText);
+const MAP_DIRECTIONS_URL = BUSINESS.mapsDirectionsUrl;
 
 export default function ServiceArea() {
   return (

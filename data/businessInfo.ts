@@ -14,4 +14,11 @@ export const BUSINESS = {
   addressText:
     "Jl. Garuda Jl. Cendekia No.3A Blok B2, Gunung Sindur, Bogor 16350",
   hours: "24 Jam (Senin - Minggu)",
+  latitude: -6.394897272233862,
+  longitude: 106.71778891349484,
+  mapsLink: "https://maps.app.goo.gl/eBCUH2Rw3XZUkGUe9",
+  mapsEmbedUrl:
+    "https://maps.google.com/maps?q=-6.394897272233862,106.71778891349484&hl=id&z=17&output=embed",
+  mapsDirectionsUrl:
+    "https://www.google.com/maps/dir/?api=1&destination=-6.394897272233862,106.71778891349484",
 } as const;
