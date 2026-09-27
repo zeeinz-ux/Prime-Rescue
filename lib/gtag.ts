@@ -26,6 +26,10 @@ export function trackWhatsAppClick(label: string) {
   event("whatsapp_click", "engagement", label);
 }
 
+export function trackPhoneClick(label: string) {
+  event("phone_click", "engagement", label);
+}
+
 export function trackScrollDepth(percent: number) {
   event("scroll_depth", "engagement", `${percent}%`);
 }

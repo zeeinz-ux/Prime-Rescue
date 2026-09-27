@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/sections/Header";
 import Footer from "@/components/sections/Footer";
+import FloatingCta from "@/components/ui/FloatingCta";
 import JsonLd from "@/components/seo/JsonLd";
 import GoogleAnalytics from "@/components/seo/GoogleAnalytics";
 import ScrollTracking from "@/components/seo/ScrollTracking";
@@ -69,6 +70,7 @@ export default function RootLayout({
         <Header />
         <main id="konten">{children}</main>
         <Footer />
+        <FloatingCta />
       </body>
     </html>
   );
