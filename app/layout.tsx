@@ -15,7 +15,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://primarescue.id"),
+  metadataBase: new URL("https://primerescue.web.id"),
   title: "Ambulans 24 Jam Prima Rescue Gunung Sindur",
   description:
     "Layanan ambulans profesional 24/7 di Gunung Sindur & Bogor. Pengantaran cepat, tim terlatih, hubungi WhatsApp 085770918098 sekarang juga.",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     title: "Ambulans 24 Jam Prima Rescue Gunung Sindur",
     description:
       "Layanan ambulans profesional 24/7 di Gunung Sindur & Bogor. Hubungi WhatsApp 085770918098.",
-    url: "https://primarescue.id",
+    url: "https://primerescue.web.id",
     siteName: "Prima Rescue",
     locale: "id_ID",
     type: "website",
