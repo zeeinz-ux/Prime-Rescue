@@ -1,8 +1,8 @@
 # AGENTS.md
 
-Single-page landing page for **Prime Rescue** (24-hour ambulance, Gunung Sindur, Bogor). Next.js 16.3.5 (App Router) + React 19 + TypeScript + Tailwind CSS v4. No `src/` dir (`app/`, `components/`, `data/`, `lib/` at root).
+Single-page landing page for **Prime Rescue** (24-hour ambulance, Gunung Sindur, Bogor). Brand spelling is **Prime, never "Prima"** (a full rebrand was done — if you see "Prima" anywhere, it's a bug). Next.js 16.3.5 (App Router) + React 19 + TypeScript + Tailwind CSS v4. No `src/` dir (`app/`, `components/`, `data/`, `lib/` at root).
 
-Spec: `PRIME_RESCUE_LANDING_PAGE_DOCUMENTATION.md` is the product/design authority, but it is stale in places (says Next 14, `tailwind.config.js`, Vercel) — **where it conflicts with code/config, trust the code**.
+Spec: `PRIME_RESCUE_LANDING_PAGE_DOCUMENTATION.md` is the product/design authority, but it is stale in places (says Next 14, `tailwind.config.js`, Vercel, `primarescue.id`) — **where it conflicts with code/config, trust the code**.
 
 ## Commands
 
@@ -19,8 +19,8 @@ Spec: `PRIME_RESCUE_LANDING_PAGE_DOCUMENTATION.md` is the product/design authori
 ## Architecture
 
 - `app/page.tsx` order is canonical: Hero → QuickInfo → Services → WhyChooseUs → Gallery → ServiceArea → HowItWorks → Faq → ContactCta (each section wrapped in `FadeIn`). Header, Footer, `FloatingCta`, `JsonLd`, `GoogleAnalytics`, `ScrollTracking` live in `app/layout.tsx`, not in `page.tsx`.
-- `data/businessInfo.ts` (+ `services.ts`, `faqs.ts`, `gallery.ts`) is the single source of truth — import `BUSINESS`, never hardcode WhatsApp/phone/address/hours in components. Track engagement via `trackWhatsAppClick` / `trackPhoneClick` / `trackScrollDepth` in `lib/gtag.ts`.
-- Shared UI: `components/ui/` (`Container` = `max-w-[1200px]` page container, `SectionHeading`, `WhatsAppButton`, `FadeIn`); SEO in `components/seo/` + `app/sitemap.ts` / `app/robots.ts` with `metadataBase https://primerescue.web.id` and `public/og.png`.
+- `data/businessInfo.ts` (+ `services.ts`, `faqs.ts`, `gallery.ts`) is the single source of truth — import `BUSINESS`, never hardcode WhatsApp/phone/address/hours in components (known exception: `HowItWorks.tsx` still hardcodes the number — switch it to `BUSINESS` when touching that file). Track engagement via `trackWhatsAppClick` / `trackPhoneClick` / `trackScrollDepth` in `lib/gtag.ts`.
+- Shared UI: `components/ui/` (`Container` = `max-w-[1200px]` page container, `SectionHeading`, `WhatsAppButton`, `FadeIn`); SEO in `components/seo/` + `app/sitemap.ts` / `app/robots.ts` with `metadataBase https://primerescue.web.id` and `public/og.png` (raster with baked-in brand text — regenerate the image, don't just edit code, when brand/phone/tagline changes).
 
 ## Content & design rules
 
