@@ -35,7 +35,7 @@ export default function Hero() {
           <div className="lg:order-1">
             <Image
               src={armadaImg}
-              alt="Ambulans Prima Rescue siap melayani 24 jam di Gunung Sindur, Bogor"
+              alt="Ambulans Prime Rescue siap melayani 24 jam di Gunung Sindur, Bogor"
               priority
               sizes="(min-width: 1024px) 50vw, 100vw"
               className="rounded-lg object-cover shadow-lg"

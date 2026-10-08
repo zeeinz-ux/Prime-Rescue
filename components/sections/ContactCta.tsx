@@ -12,7 +12,7 @@ export default function ContactCta() {
             Butuh Ambulans Sekarang?
           </h2>
           <p className="mt-4 text-lg leading-relaxed text-clinical-white/90">
-            Hubungi Prima Rescue 24/7 melalui WhatsApp.
+            Hubungi Prime Rescue 24/7 melalui WhatsApp.
           </p>
           <WhatsAppButton variant="onRed" trackLabel="contact_cta" className="mt-8 h-12 px-8 text-base">
             Hubungi WhatsApp

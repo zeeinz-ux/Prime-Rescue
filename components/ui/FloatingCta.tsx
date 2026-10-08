@@ -11,7 +11,7 @@ export default function FloatingCta() {
   return (
     <div
       className="fixed bottom-6 right-6 z-50 flex flex-col gap-3"
-      aria-label="Kontak cepat Prima Rescue"
+      aria-label="Kontak cepat Prime Rescue"
     >
       <a
         href={`tel:${BUSINESS.phoneE164}`}
@@ -27,7 +27,7 @@ export default function FloatingCta() {
         target="_blank"
         rel="noopener noreferrer"
         onClick={() => trackWhatsAppClick("floating_cta")}
-        aria-label="Chat WhatsApp Prima Rescue"
+        aria-label="Chat WhatsApp Prime Rescue"
         className={`${BASE_BUTTON_CLASSES} bg-[#25D366] hover:bg-[#1dae55]`}
       >
         <Icon name="whatsapp" className="h-4 w-4 shrink-0 md:h-5 md:w-5" />

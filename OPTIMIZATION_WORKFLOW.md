@@ -1,6 +1,6 @@
 # Optimization Workflow
 
-Objective: Improve performance, accessibility, SEO, and code quality for the Prima Rescue landing page.
+Objective: Improve performance, accessibility, SEO, and code quality for the Prime Rescue landing page.
 
 ## Phase 1: Performance
 - [x] Audit `public/images`: Compress all images to optimal `.webp` size.

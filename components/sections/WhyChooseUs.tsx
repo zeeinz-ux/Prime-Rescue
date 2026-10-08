@@ -24,7 +24,7 @@ export default function WhyChooseUs() {
   return (
     <section id="keunggulan" className="bg-background-soft py-16 md:py-24">
       <Container>
-        <SectionHeading title="Mengapa Memilih Prima Rescue?" />
+        <SectionHeading title="Mengapa Memilih Prime Rescue?" />
         <div className="grid gap-10 sm:grid-cols-3 sm:gap-6">
           {VALUES.map((value) => (
             <div key={value.title} className="max-w-[300px]">

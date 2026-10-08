@@ -4,7 +4,7 @@ export default function AmbulanceIllustration() {
       <svg
         viewBox="0 0 640 420"
         role="img"
-        aria-label="Ilustrasi ambulans Prima Rescue melaju di jalan Gunung Sindur"
+        aria-label="Ilustrasi ambulans Prime Rescue melaju di jalan Gunung Sindur"
         className="h-auto w-full"
       >
         <defs>

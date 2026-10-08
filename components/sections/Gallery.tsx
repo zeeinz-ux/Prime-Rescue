@@ -54,7 +54,7 @@ export default function Gallery() {
       <Container>
         <SectionHeading
           title="Galeri Tim & Armada Kami"
-          subtitle="Lihat langsung ambulans dan tim Prima Rescue yang siap membantu Anda."
+          subtitle="Lihat langsung ambulans dan tim Prime Rescue yang siap membantu Anda."
         />
 
         <div

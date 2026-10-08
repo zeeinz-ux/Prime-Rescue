@@ -51,7 +51,7 @@ export default function Header() {
           <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-emergency-red">
             <Icon name="cross" className="h-5 w-5 text-white" />
           </span>
-          Prima Rescue
+          Prime Rescue
         </a>
 
         <nav className="hidden items-center gap-8 md:flex" aria-label="Navigasi utama">

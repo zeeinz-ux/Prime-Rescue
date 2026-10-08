@@ -6,22 +6,22 @@ import antarImg from "@/public/images/antar-1.webp";
 export const GALLERY_PHOTOS = [
   {
     src: armadaImg,
-    alt: "Armada ambulans Prima Rescue siap melayani 24 jam di Gunung Sindur, Bogor",
-    caption: "Armada Prima Rescue",
+    alt: "Armada ambulans Prime Rescue siap melayani 24 jam di Gunung Sindur, Bogor",
+    caption: "Armada Prime Rescue",
   },
   {
     src: interiorImg,
-    alt: "Interior ambulans Prima Rescue yang bersih, steril dan nyaman",
+    alt: "Interior ambulans Prime Rescue yang bersih, steril dan nyaman",
     caption: "Interior Steril & Nyaman",
   },
   {
     src: timImg,
-    alt: "Tim terlatih Prima Rescue saat menangani pasien dengan sigap",
+    alt: "Tim terlatih Prime Rescue saat menangani pasien dengan sigap",
     caption: "Tim Terlatih & Berpengalaman",
   },
   {
     src: antarImg,
-    alt: "Perjalanan pengantaran pasien menggunakan ambulans Prima Rescue",
+    alt: "Perjalanan pengantaran pasien menggunakan ambulans Prime Rescue",
     caption: "Pengantaran Cepat & Aman",
   },
 ] as const;

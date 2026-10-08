@@ -27,7 +27,7 @@ export default function ServiceArea() {
           <div className="overflow-hidden rounded-lg border border-border-light">
             <iframe
               src={MAP_EMBED_URL}
-              title="Lokasi Prima Rescue di Gunung Sindur, Bogor"
+              title="Lokasi Prime Rescue di Gunung Sindur, Bogor"
               className="h-[300px] w-full border-0 md:h-[400px]"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"

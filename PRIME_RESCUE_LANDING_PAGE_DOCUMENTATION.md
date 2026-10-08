@@ -1,4 +1,4 @@
-# DOKUMENTASI LANDING PAGE PRIMA RESCUE
+# DOKUMENTASI LANDING PAGE PRIME RESCUE
 **Jasa Ambulans 24 Jam - Gunung Sindur, Bogor**
 
 ---
@@ -16,7 +16,7 @@
 
 ## 1. EXECUTIVE SUMMARY
 
-**Proyek:** Landing Page Prima Rescue  
+**Proyek:** Landing Page Prime Rescue  
 **Objektif Utama:**
 - Menyediakan informasi ambulans 24 jam yang mudah ditemukan melalui search engine
 - Memfasilitasi customer inquiry melalui WhatsApp 085770918098
@@ -37,7 +37,7 @@
 
 ### 2.1 Filosofi Design
 
-Prima Rescue beroperasi di industri medical emergency transport. Design harus mengkomunikasikan:
+Prime Rescue beroperasi di industri medical emergency transport. Design harus mengkomunikasikan:
 - **Kepercayaan (Trust):** Pengguna mempercayai kami saat kondisi genting
 - **Kecepatan (Responsiveness):** Kami siap 24/7, informasi mudah diakses instantly
 - **Profesionalisme (Professionalism):** Medical-grade service, bukan amatir
@@ -274,7 +274,7 @@ Cost: Free tier suffices, atau paid ~$20/bulan untuk custom domain + enhanced fe
 DOMAIN & EMAIL:
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Domain: primarescue.id (atau primarescue.com jika .id tidak tersedia)
+Domain: primerescue.web.id (atau primerescue.web.id jika .id tidak tersedia)
   - Register di Namecheap, CloudFlare, atau local ID registrar
   - Point DNS ke Vercel nameservers
   - SSL certificate automatic (Vercel handles it)
@@ -320,7 +320,7 @@ ON-PAGE SEO:
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Meta Tags:
-  Title: "Ambulans 24 Jam Gunung Sindur Bogor | Prima Rescue"
+  Title: "Ambulans 24 Jam Gunung Sindur Bogor | Prime Rescue"
     - Include primary keyword
     - Include location (Gunung Sindur, Bogor)
     - Under 60 characters
@@ -341,8 +341,8 @@ Meta Tags:
     {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
-      "name": "Prima Rescue",
-      "image": "https://primarescue.id/logo.png",
+      "name": "Prime Rescue",
+      "image": "https://primerescue.web.id/logo.png",
       "description": "Layanan ambulans 24 jam",
       "address": {
         "@type": "PostalAddress",
@@ -353,7 +353,7 @@ Meta Tags:
         "addressCountry": "ID"
       },
       "telephone": "+6285770918098",
-      "url": "https://primarescue.id",
+      "url": "https://primerescue.web.id",
       "openingHoursSpecification": {
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
@@ -364,8 +364,8 @@ Meta Tags:
     ```
 
 Heading Hierarchy:
-  <h1>: One per page, "Ambulans 24 Jam Prima Rescue - Layanan Profesional"
-  <h2>: Section titles (Layanan Kami, Kenapa Pilih Prima Rescue, Lokasi Kami)
+  <h1>: One per page, "Ambulans 24 Jam Prime Rescue - Layanan Profesional"
+  <h2>: Section titles (Layanan Kami, Kenapa Pilih Prime Rescue, Lokasi Kami)
   <h3>: Sub-sections (Pengantaran Pasien, Evakuasi Darurat, etc.)
   
   AVOID: Multiple H1s, skipping levels (H1 → H3), decorative headings
@@ -389,8 +389,8 @@ Keyword Targeting:
     - Meta description: 1x keyword + location
     - H1: Include 1 keyword naturally
     - Body text: Mention keywords 2-3x total (naturally, not forced)
-    - URL slugs: use keywords (but URL structure simple: primarescue.id/)
-    - Image alt text: "ambulans Prima Rescue 24 jam" (descriptive + keyword)
+    - URL slugs: use keywords (but URL structure simple: primerescue.web.id/)
+    - Image alt text: "ambulans Prime Rescue 24 jam" (descriptive + keyword)
 
 
 TECHNICAL SEO:
@@ -420,7 +420,7 @@ Sitemap & Robots.txt:
     <?xml version="1.0" encoding="UTF-8"?>
     <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
       <url>
-        <loc>https://primarescue.id/</loc>
+        <loc>https://primerescue.web.id/</loc>
         <lastmod>2024-01-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
@@ -433,7 +433,7 @@ Sitemap & Robots.txt:
     User-agent: *
     Allow: /
     Disallow: /admin/
-    Sitemap: https://primarescue.id/sitemap.xml
+    Sitemap: https://primerescue.web.id/sitemap.xml
     ```
 
 Mobile Optimization:
@@ -457,7 +457,7 @@ Local directories:
   - Bogor tourism/business directories
   
 Community engagement:
-  - Partner dengan rumah sakit/klinik lokal (mention Prima Rescue)
+  - Partner dengan rumah sakit/klinik lokal (mention Prime Rescue)
   - Community health initiatives
   - Local Facebook groups, forums
 
@@ -473,7 +473,7 @@ Citation building:
 ### 4.1 Page Architecture
 
 ```
-PRIMA RESCUE LANDING PAGE SITEMAP:
+PRIME RESCUE LANDING PAGE SITEMAP:
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Single-page scroll experience (no multiple pages initially)
@@ -499,7 +499,7 @@ Sections (in order):
 ═══════════════════════════════════════════════════════════════════════
 
 Content:
-  Logo: Prima Rescue (text + icon ambulans simple)
+  Logo: Prime Rescue (text + icon ambulans simple)
   Navigation: Home | Layanan | Tentang | Kontak
   CTA Button: "Hubungi Sekarang" (Emergency Red button)
   
@@ -537,7 +537,7 @@ Statistics/Trust indicators (small, below buttons):
 Copy note:
   Headline simple, 1 line, under 10 words
   Subheadline explain value, bukan feature
-  Image alt text: "Ambulans Prima Rescue siap melayani 24 jam"
+  Image alt text: "Ambulans Prime Rescue siap melayani 24 jam"
 
 Mobile consideration:
   On mobile, ambulans image stacks below text (not beside)
@@ -616,7 +616,7 @@ Spacing:
 5. WHY CHOOSE US / KEUNGGULAN SECTION
 ═══════════════════════════════════════════════════════════════════════
 
-Section title: "Mengapa Memilih Prima Rescue?"
+Section title: "Mengapa Memilih Prime Rescue?"
 
 Three value propositions (text + icon, no cards):
 
@@ -657,7 +657,7 @@ Extended area:
 
 Design:
   - Embedded Google Maps showing location (pinarescue.id address pinned)
-  - Text overlay on map: "Lokasi Prima Rescue"
+  - Text overlay on map: "Lokasi Prime Rescue"
   - Below map: List of serviceable areas
   
   On mobile:
@@ -676,7 +676,7 @@ Subtitle: "Proses sederhana dan cepat untuk mendapatkan bantuan"
 
   Step 1: HUBUNGI KAMI
     Number: "01"
-    Description: "Hubungi Prima Rescue melalui WhatsApp 085770918098"
+    Description: "Hubungi Prime Rescue melalui WhatsApp 085770918098"
     
   Step 2: INFORMASI PASIEN
     Number: "02"
@@ -709,10 +709,10 @@ Purpose: Address objections, build trust, improve SEO with long-tail keywords
 
 Expandable accordion (click to reveal answer):
 
-Q1: Berapa biaya layanan ambulans Prima Rescue?
+Q1: Berapa biaya layanan ambulans Prime Rescue?
 A: "Biaya layanan bervariasi tergantung lokasi dan jarak. Hubungi kami via WhatsApp untuk penawaran harga yang akurat sesuai kebutuhan Anda."
 
-Q2: Apakah ambulans Prima Rescue menerima pasien dari mana saja?
+Q2: Apakah ambulans Prime Rescue menerima pasien dari mana saja?
 A: "Kami melayani Gunung Sindur dan daerah sekitar Bogor. Untuk area diluar itu, silakan hubungi untuk konfirmasi ketersediaan layanan."
 
 Q3: Bagaimana jika ambulans tidak tersedia saat saya menghubungi?
@@ -750,7 +750,7 @@ Section background: Emergency Red (#DC2626)
 Section text: White (#F8FAFC)
 
 Headline: "Butuh Ambulans Sekarang?"
-Subheadline: "Hubungi Prima Rescue 24/7 melalui WhatsApp"
+Subheadline: "Hubungi Prime Rescue 24/7 melalui WhatsApp"
 
 Primary CTA: 
   Button text: "Hubungi WhatsApp +62 857-7091-8098"
@@ -780,8 +780,8 @@ Text: White (#F8FAFC)
 
 Content (3 columns on desktop, stack on mobile):
 
-  Column 1: Tentang Prima Rescue
-    "Prima Rescue adalah layanan ambulans 24 jam yang melayani Gunung Sindur, Bogor dan daerah sekitarnya dengan profesionalisme dan kecepatan."
+  Column 1: Tentang Prime Rescue
+    "Prime Rescue adalah layanan ambulans 24 jam yang melayani Gunung Sindur, Bogor dan daerah sekitarnya dengan profesionalisme dan kecepatan."
     
   Column 2: Links (Quick navigation)
     - Beranda
@@ -796,7 +796,7 @@ Content (3 columns on desktop, stack on mobile):
     "Jam Operasional: 24 Jam"
 
 Bottom footer line:
-  Copyright notice: "© 2024 Prima Rescue. All rights reserved."
+  Copyright notice: "© 2024 Prime Rescue. All rights reserved."
   "Developed with care for your safety"
 
 SEO elements in footer:
@@ -816,7 +816,7 @@ Core messaging (tidak berubah di semua section):
 Headlines:
   ✓ "Ambulans 24 Jam Siap Membantu Anda" (action-oriented, benefit-focused)
   ✓ "Pengantaran Cepat ke Rumah Sakit Anda" (specific outcome)
-  ✓ "Hubungi Prima Rescue Sekarang" (urgency, CTA)
+  ✓ "Hubungi Prime Rescue Sekarang" (urgency, CTA)
   
   ✗ "Kami Adalah Layanan Ambulans Terpercaya" (focuses on us, not user benefit)
   ✗ "Jasa Transportasi Medis Profesional" (corporate, unclear benefit)
@@ -928,7 +928,7 @@ Body copy principles:
 ### 5.6 Phase 6: Deployment & Launch (Week 6)
 
 **Tasks:**
-- [ ] Domain setup (primarescue.id / DNS pointing to Vercel)
+- [ ] Domain setup (primerescue.web.id / DNS pointing to Vercel)
 - [ ] Vercel deployment
 - [ ] SSL certificate activation
 - [ ] Google Search Console submission
@@ -1218,8 +1218,8 @@ Content audit untuk memastikan semua copy SEO-friendly dan user-focused:
 
 ```bash
 # Initial setup
-npx create-next-app@latest prima-rescue --typescript --tailwind
-cd prima-rescue
+npx create-next-app@latest prime-rescue --typescript --tailwind
+cd prime-rescue
 
 # Development
 npm run dev  # http://localhost:3000
@@ -1245,7 +1245,7 @@ git push origin main  # Auto-triggers deployment if Vercel connected
 **Version:** 1.0  
 **Last Updated:** January 2024  
 **Status:** Ready for Development  
-**Audience:** Development team, Prima Rescue management  
+**Audience:** Development team, Prime Rescue management  
 **Next Review:** Post-launch (Month 1)
 
 ---

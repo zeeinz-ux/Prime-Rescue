@@ -1,8 +1,8 @@
 # AGENTS.md
 
-Single-page landing page for **Prima Rescue** (24-hour ambulance, Gunung Sindur, Bogor). Next.js 16.3.5 (App Router) + React 19 + TypeScript + Tailwind CSS v4. No `src/` dir (`app/`, `components/`, `data/`, `lib/` at root).
+Single-page landing page for **Prime Rescue** (24-hour ambulance, Gunung Sindur, Bogor). Next.js 16.3.5 (App Router) + React 19 + TypeScript + Tailwind CSS v4. No `src/` dir (`app/`, `components/`, `data/`, `lib/` at root).
 
-Spec: `PRIMA_RESCUE_LANDING_PAGE_DOCUMENTATION.md` is the product/design authority, but it is stale in places (says Next 14, `tailwind.config.js`, Vercel) — **where it conflicts with code/config, trust the code**.
+Spec: `PRIME_RESCUE_LANDING_PAGE_DOCUMENTATION.md` is the product/design authority, but it is stale in places (says Next 14, `tailwind.config.js`, Vercel) — **where it conflicts with code/config, trust the code**.
 
 ## Commands
 

@@ -19,10 +19,10 @@ export default function Footer() {
               <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-emergency-red">
                 <Icon name="cross" className="h-5 w-5" />
               </span>
-              Prima Rescue
+              Prime Rescue
             </div>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-clinical-white/70">
-              Prima Rescue adalah layanan ambulans 24 jam yang melayani Gunung
+              Prime Rescue adalah layanan ambulans 24 jam yang melayani Gunung
               Sindur, Bogor, dan daerah sekitarnya dengan profesionalisme dan
               kecepatan.
             </p>
@@ -68,7 +68,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 flex flex-col items-center justify-between gap-2 border-t border-white/10 pt-6 text-xs text-clinical-white/50 sm:flex-row">
-          <p>© {new Date().getFullYear()} Prima Rescue. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Prime Rescue. All rights reserved.</p>
           <p>Crafted by SixLabs</p>
         </div>
       </Container>

@@ -1,5 +1,5 @@
 export const BUSINESS = {
-  name: "Prima Rescue",
+  name: "Prime Rescue",
   url: "https://primerescue.web.id",
   whatsappDisplay: "085770918098",
   whatsappLink: "https://wa.me/6285770918098",

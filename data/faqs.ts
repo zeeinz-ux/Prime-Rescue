@@ -1,11 +1,11 @@
 export const FAQS = [
   {
-    question: "Berapa biaya layanan ambulans Prima Rescue?",
+    question: "Berapa biaya layanan ambulans Prime Rescue?",
     answer:
       "Biaya layanan bervariasi tergantung lokasi dan jarak. Hubungi kami via WhatsApp untuk penawaran harga yang akurat sesuai kebutuhan Anda.",
   },
   {
-    question: "Apakah ambulans Prima Rescue menerima pasien dari mana saja?",
+    question: "Apakah ambulans Prime Rescue menerima pasien dari mana saja?",
     answer:
       "Kami melayani Gunung Sindur dan daerah sekitar Bogor. Untuk area di luar itu, silakan hubungi untuk konfirmasi ketersediaan layanan.",
   },

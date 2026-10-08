@@ -1,13 +1,13 @@
-# STRUKTUR FOLDER & FILE — LANDING PAGE PRIMA RESCUE
+# STRUKTUR FOLDER & FILE — LANDING PAGE PRIME RESCUE
 
-Struktur aktual proyek (sudah di-scaffold & diimplementasikan). Referensi: `PRIMA_RESCUE_LANDING_PAGE_DOCUMENTATION.md`.
+Struktur aktual proyek (sudah di-scaffold & diimplementasikan). Referensi: `PRIME_RESCUE_LANDING_PAGE_DOCUMENTATION.md`.
 
 > Catatan: scaffold memakai `--no-src-dir`, jadi `app/ components/ data/` berada di root, bukan di dalam `src/`. Struktur ini sudah live, bukan rencana.
 
 ## 1. Struktur Aktual
 
 ```
-Prima Rescue/
+Prime Rescue/
 │
 ├── app/                            # App Router
 │   ├── layout.tsx                  # Metadata SEO, font Inter, JSON-LD, Header/Footer, skip-link

@@ -16,18 +16,18 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://primerescue.web.id"),
-  title: "Ambulans 24 Jam Prima Rescue Gunung Sindur",
+  title: "Ambulans 24 Jam Prime Rescue Gunung Sindur",
   description:
     "Layanan ambulans profesional 24/7 di Gunung Sindur & Bogor. Pengantaran cepat, tim terlatih, hubungi WhatsApp 085770918098 sekarang juga.",
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "Ambulans 24 Jam Prima Rescue Gunung Sindur",
+    title: "Ambulans 24 Jam Prime Rescue Gunung Sindur",
     description:
       "Layanan ambulans profesional 24/7 di Gunung Sindur & Bogor. Hubungi WhatsApp 085770918098.",
     url: "https://primerescue.web.id",
-    siteName: "Prima Rescue",
+    siteName: "Prime Rescue",
     locale: "id_ID",
     type: "website",
     images: [
@@ -35,13 +35,13 @@ export const metadata: Metadata = {
         url: "/og.png",
         width: 1200,
         height: 630,
-        alt: "Prima Rescue - Ambulans 24 Jam Gunung Sindur, Bogor",
+        alt: "Prime Rescue - Ambulans 24 Jam Gunung Sindur, Bogor",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ambulans 24 Jam Prima Rescue Gunung Sindur",
+    title: "Ambulans 24 Jam Prime Rescue Gunung Sindur",
     description:
       "Layanan ambulans profesional 24/7 di Gunung Sindur & Bogor. Hubungi WhatsApp 085770918098.",
     images: ["/og.png"],

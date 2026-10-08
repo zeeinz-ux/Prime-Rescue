@@ -1,6 +1,6 @@
-# Prima Rescue
+# Prime Rescue
 
-Landing page layanan ambulans 24 jam Prima Rescue di Gunung Sindur, Bogor. Dibangun dengan Next.js 16 (App Router), TypeScript, dan Tailwind CSS v4.
+Landing page layanan ambulans 24 jam Prime Rescue di Gunung Sindur, Bogor. Dibangun dengan Next.js 16 (App Router), TypeScript, dan Tailwind CSS v4.
 
 ## Fitur
 

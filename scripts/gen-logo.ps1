@@ -33,5 +33,5 @@ function New-CrossBitmap([int]$size, [string]$outPath) {
   $bmp.Dispose()
 }
 
-New-CrossBitmap 512 "D:\Project-Me\My-Project\Prima Rescue\public\logo.png"
+New-CrossBitmap 512 "D:\Project-Me\My-Project\Prime Rescue\public\logo.png"
 Write-Output "created logo.png"

@@ -5,7 +5,7 @@ const STEPS = [
   {
     number: "01",
     title: "Hubungi Kami",
-    description: "Hubungi Prima Rescue melalui WhatsApp 085770918098.",
+    description: "Hubungi Prime Rescue melalui WhatsApp 085770918098.",
   },
   {
     number: "02",
