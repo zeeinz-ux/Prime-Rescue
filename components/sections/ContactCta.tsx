@@ -4,7 +4,6 @@ import Container from "@/components/ui/Container";
 import Icon from "@/components/ui/Icon";
 import WhatsAppButton from "@/components/ui/WhatsAppButton";
 import { BUSINESS } from "@/data/businessInfo";
-import { trackPhoneClick } from "@/lib/gtag";
 
 export default function ContactCta() {
   return (
@@ -27,23 +26,14 @@ export default function ContactCta() {
             Hubungi Prime Rescue sekarang untuk penjemputan darurat maupun rujukan rumah sakit terjadwal di Gunung Sindur & sekitarnya.
           </p>
 
-          <div className="mt-8 flex w-full flex-col items-center justify-center gap-3.5 sm:w-auto sm:flex-row">
+          <div className="mt-8 flex w-full justify-center sm:w-auto">
             <WhatsAppButton
               variant="onRed"
               trackLabel="contact_cta"
-              className="h-11 w-full px-7 text-base shadow-md sm:w-auto"
+              className="h-11 w-full px-8 text-base shadow-md sm:w-auto"
             >
               Hubungi Via WhatsApp
             </WhatsAppButton>
-
-            <a
-              href={`tel:${BUSINESS.phoneE164}`}
-              onClick={() => trackPhoneClick("contact_cta")}
-              className="btn-tactile inline-flex h-11 w-full items-center justify-center gap-2 rounded-lg border border-white/40 bg-red-700/50 px-7 text-base font-semibold text-white shadow-xs transition-colors hover:bg-red-700 active:translate-y-0.5 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-100 dark:hover:bg-neutral-800 sm:w-auto"
-            >
-              <Icon name="phone" className="h-4 w-4" />
-              <span>{BUSINESS.whatsappDisplay}</span>
-            </a>
           </div>
 
           <div className="mt-10 flex flex-wrap items-center justify-center gap-6 text-xs text-red-100 dark:text-neutral-400 sm:text-sm">
