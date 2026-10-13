@@ -74,7 +74,7 @@ export default function Header() {
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => trackWhatsAppClick("header")}
-            className="inline-flex h-11 items-center gap-2 rounded-lg bg-emergency-red px-6 text-sm font-semibold text-white transition-colors hover:bg-red-700"
+            className="btn-tactile inline-flex h-11 items-center gap-2 rounded-lg bg-emergency-red px-6 text-sm font-semibold text-white shadow-3d-red transition-all hover:-translate-y-0.5 hover:bg-red-700 active:translate-y-0.5"
           >
             <Icon name="whatsapp" className="h-4 w-4" />
             Hubungi Sekarang

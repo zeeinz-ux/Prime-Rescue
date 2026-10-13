@@ -6,7 +6,7 @@ import Icon from "./Icon";
 import { trackWhatsAppClick } from "@/lib/gtag";
 
 type WhatsAppButtonProps = {
-  variant?: "primary" | "onRed";
+  variant?: "primary" | "onRed" | "emerald";
   trackLabel?: string;
   className?: string;
   children: ReactNode;
@@ -20,8 +20,10 @@ export default function WhatsAppButton({
 }: WhatsAppButtonProps) {
   const style =
     variant === "primary"
-      ? "bg-emergency-red text-white hover:bg-red-700"
-      : "bg-white text-emergency-red hover:bg-clinical-white";
+      ? "bg-emergency-red text-white hover:bg-red-700 shadow-3d-red"
+      : variant === "emerald"
+      ? "bg-emerald-600 text-white hover:bg-emerald-700 shadow-3d-green"
+      : "bg-white text-emergency-red hover:bg-clinical-white shadow-md";
 
   return (
     <a
@@ -29,7 +31,7 @@ export default function WhatsAppButton({
       target="_blank"
       rel="noopener noreferrer"
       onClick={() => trackWhatsAppClick(trackLabel)}
-      className={`inline-flex h-11 min-w-0 items-center justify-center gap-2 rounded-lg px-6 py-3 text-base font-semibold transition-colors ${style} ${className ?? ""}`}
+      className={`btn-tactile inline-flex h-11 min-w-0 items-center justify-center gap-2 rounded-lg px-6 py-3 text-base font-semibold transition-all hover:-translate-y-0.5 active:translate-y-0.5 ${style} ${className ?? ""}`}
     >
       <Icon name="whatsapp" className="h-5 w-5 shrink-0" />
       {children}
