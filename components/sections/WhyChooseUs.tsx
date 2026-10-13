@@ -4,61 +4,44 @@ import Icon, { type IconName } from "@/components/ui/Icon";
 
 const VALUES = [
   {
-    step: "01",
     icon: "check" as IconName,
-    title: "Profesional & Terlatih",
-    text: "Tim kami terdiri dari profesional yang berpengalaman dan terlatih dalam penanganan pasien emergency.",
+    title: "Tim Profesional & Berpengalaman",
+    text: "Didukung paramedis dan driver terlatih dalam penanganan dan pendampingan kondisi pasien darurat.",
   },
   {
-    step: "02",
     icon: "bolt" as IconName,
-    title: "Respons Cepat",
-    text: "Kami berkomitmen untuk sampai di lokasi Anda dalam waktu 15-30 menit di area Gunung Sindur.",
+    title: "Respons Cepat 15–30 Menit",
+    text: "Pos siaga di Gunung Sindur memastikan waktu tempuh ke kediaman Anda secepat dan seefisien mungkin.",
   },
   {
-    step: "03",
     icon: "chat" as IconName,
-    title: "Mudah Dihubungi",
-    text: "Hubungi via WhatsApp kapan saja. Tim siap menerima pesanan 24 jam setiap hari.",
+    title: "Komunikasi Langsung & Siaga 24/7",
+    text: "Tanpa prosedur rumit. Hubungi via WhatsApp kapan saja, operator siap merespons kebutuhan Anda.",
   },
 ];
 
 export default function WhyChooseUs() {
   return (
-    <section id="keunggulan" className="relative overflow-hidden bg-navy-dark py-20 md:py-28 text-white">
-      {/* Subtle 3D background light accents */}
-      <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
-        <div className="absolute top-0 left-1/4 h-80 w-80 rounded-full bg-emergency-red/10 blur-3xl" />
-        <div className="absolute bottom-0 right-1/4 h-80 w-80 rounded-full bg-medical-green/10 blur-3xl" />
-      </div>
-
+    <section id="keunggulan" className="relative bg-navy-dark py-16 text-white md:py-24">
       <Container>
         <SectionHeading title="Mengapa Memilih Prime Rescue?" variant="dark" />
-        <div className="perspective-1000 grid gap-8 sm:grid-cols-3 sm:gap-6">
+        <div className="grid gap-6 sm:grid-cols-3">
           {VALUES.map((value) => (
             <div
               key={value.title}
-              className="group relative flex flex-col justify-between overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-7 shadow-3d backdrop-blur-md transition-all duration-300 hover:-translate-y-2 hover:border-white/20 hover:bg-white/[0.08] hover:shadow-2xl sm:p-8"
+              className="flex flex-col justify-between rounded-xl border border-slate-700/60 bg-slate-800/40 p-7"
             >
-              {/* Giant 3D Watermark Index Number */}
-              <span className="pointer-events-none absolute top-3 right-4 select-none text-7xl font-black tracking-tighter text-white/[0.04] transition-colors group-hover:text-white/[0.08] sm:text-8xl">
-                {value.step}
-              </span>
-
               <div>
-                <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-medical-green/15 text-medical-green ring-1 ring-medical-green/30 shadow-md transition-transform duration-300 group-hover:scale-110">
-                  <Icon name={value.icon} className="h-7 w-7" />
-                </div>
-                <h3 className="mt-6 text-xl font-bold text-white transition-colors group-hover:text-medical-green">
+                <span className="flex h-12 w-12 items-center justify-center rounded-lg bg-emerald-500/10 text-medical-green">
+                  <Icon name={value.icon} className="h-6 w-6" />
+                </span>
+                <h3 className="mt-5 text-lg font-bold text-white">
                   {value.title}
                 </h3>
-                <p className="mt-3 text-sm leading-relaxed text-slate-300">
+                <p className="mt-2.5 text-sm leading-relaxed text-slate-300">
                   {value.text}
                 </p>
               </div>
-
-              {/* Bottom active indicator */}
-              <div className="mt-6 h-1 w-8 rounded-full bg-medical-green/40 transition-all duration-300 group-hover:w-16 group-hover:bg-medical-green" />
             </div>
           ))}
         </div>

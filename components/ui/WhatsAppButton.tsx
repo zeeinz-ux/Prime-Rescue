@@ -20,10 +20,10 @@ export default function WhatsAppButton({
 }: WhatsAppButtonProps) {
   const style =
     variant === "primary"
-      ? "bg-emergency-red text-white hover:bg-red-700 shadow-3d-red"
+      ? "bg-emergency-red text-white hover:bg-red-700 shadow-sm hover:shadow"
       : variant === "emerald"
-      ? "bg-emerald-600 text-white hover:bg-emerald-700 shadow-3d-green"
-      : "bg-white text-emergency-red hover:bg-clinical-white shadow-md";
+      ? "bg-emerald-600 text-white hover:bg-emerald-700 shadow-sm hover:shadow"
+      : "bg-white text-emergency-red hover:bg-slate-50 shadow-sm";
 
   return (
     <a

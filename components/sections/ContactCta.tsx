@@ -10,61 +10,51 @@ export default function ContactCta() {
   return (
     <section
       id="kontak"
-      className="relative overflow-hidden bg-gradient-to-br from-emergency-red via-red-600 to-rose-950 py-20 text-white md:py-28"
+      className="relative bg-emergency-red py-16 text-white md:py-20"
     >
-      {/* 3D Radiant Ambient Background Glows */}
-      <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
-        <div className="absolute -top-24 -right-24 h-96 w-96 rounded-full bg-white/10 blur-3xl" />
-        <div className="absolute -bottom-24 -left-24 h-96 w-96 rounded-full bg-black/25 blur-3xl" />
-      </div>
-
       <Container>
-        <div className="mx-auto flex max-w-[680px] flex-col items-center text-center">
-          {/* Emergency Pulse Badge */}
-          <div className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/15 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-white shadow-sm backdrop-blur-md">
-            <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75" />
-              <span className="relative inline-flex h-2 w-2 rounded-full bg-white" />
-            </span>
-            <span>Layanan Darurat Siaga 24/7</span>
+        <div className="mx-auto flex max-w-[640px] flex-col items-center text-center">
+          <div className="inline-flex items-center gap-2 rounded-full bg-red-700/60 px-3.5 py-1 text-xs font-semibold uppercase tracking-wider text-white">
+            <Icon name="cross" className="h-3.5 w-3.5" />
+            <span>Layanan Darurat 24 Jam</span>
           </div>
 
-          <h2 className="mt-5 text-3xl font-extrabold tracking-tight sm:text-4xl md:text-5xl">
-            Butuh Ambulans Sekarang?
+          <h2 className="mt-4 text-3xl font-extrabold tracking-tight sm:text-4xl">
+            Butuh Bantuan Ambulans Cepat?
           </h2>
 
-          <p className="mt-4 text-base leading-relaxed text-white/90 sm:text-lg">
-            Hubungi Prime Rescue 24/7 melalui WhatsApp.
+          <p className="mt-3 text-base leading-relaxed text-red-100 sm:text-lg">
+            Hubungi Prime Rescue sekarang untuk penjemputan darurat maupun rujukan rumah sakit terjadwal di Gunung Sindur & sekitarnya.
           </p>
 
-          <div className="mt-8 flex w-full flex-col items-center justify-center gap-4 sm:w-auto sm:flex-row">
+          <div className="mt-8 flex w-full flex-col items-center justify-center gap-3.5 sm:w-auto sm:flex-row">
             <WhatsAppButton
               variant="onRed"
               trackLabel="contact_cta"
-              className="h-12 w-full px-8 text-base shadow-2xl sm:w-auto"
+              className="h-11 w-full px-7 text-base shadow-md sm:w-auto"
             >
-              Hubungi WhatsApp
+              Hubungi Via WhatsApp
             </WhatsAppButton>
 
             <a
               href={`tel:${BUSINESS.phoneE164}`}
               onClick={() => trackPhoneClick("contact_cta")}
-              className="btn-tactile inline-flex h-12 w-full items-center justify-center gap-2 rounded-lg border border-white/30 bg-white/10 px-8 text-base font-semibold text-white shadow-md backdrop-blur-md transition-all hover:-translate-y-0.5 hover:bg-white/20 active:translate-y-0.5 sm:w-auto"
+              className="btn-tactile inline-flex h-11 w-full items-center justify-center gap-2 rounded-lg border border-white/40 bg-red-700/50 px-7 text-base font-semibold text-white shadow-xs transition-colors hover:bg-red-700 sm:w-auto"
             >
-              <Icon name="phone" className="h-5 w-5" />
-              {BUSINESS.whatsappDisplay}
+              <Icon name="phone" className="h-4 w-4" />
+              <span>{BUSINESS.whatsappDisplay}</span>
             </a>
           </div>
 
-          <div className="mt-12 space-y-3.5 text-sm text-white/85">
-            <p className="flex flex-col items-center justify-center gap-2 sm:flex-row">
-              <Icon name="map-pin" className="h-4 w-4 shrink-0 text-white/90" />
+          <div className="mt-10 flex flex-wrap items-center justify-center gap-6 text-xs text-red-100 sm:text-sm">
+            <div className="flex items-center gap-2">
+              <Icon name="map-pin" className="h-4 w-4 text-white" />
               <span>{BUSINESS.addressText}</span>
-            </p>
-            <p className="flex flex-col items-center justify-center gap-2 sm:flex-row">
-              <Icon name="clock" className="h-4 w-4 shrink-0 text-white/90" />
+            </div>
+            <div className="flex items-center gap-2">
+              <Icon name="clock" className="h-4 w-4 text-white" />
               <span>{BUSINESS.hours}</span>
-            </p>
+            </div>
           </div>
         </div>
       </Container>

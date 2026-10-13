@@ -40,31 +40,31 @@ export default function ServiceArea() {
   }, []);
 
   return (
-    <section id="jangkauan" className="relative overflow-hidden bg-white py-20 md:py-28">
+    <section id="jangkauan" className="relative bg-clinical-white py-16 md:py-24">
       <Container>
         <SectionHeading
           title="Area Pelayanan Kami"
-          subtitle="Kami melayani Gunung Sindur dan sekitarnya, serta area Bogor lainnya melalui koordinasi."
+          subtitle="Pos siaga di Gunung Sindur melayani penjemputan cepat wilayah Bogor dan sekitarnya."
         />
 
         <div className="mx-auto max-w-4xl">
-          {/* 3D Map Plinth Frame */}
-          <div className="rounded-2xl border border-slate-200/80 bg-slate-50 p-2 shadow-3d sm:p-3">
+          {/* Map Container */}
+          <div className="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-xs">
             <div
               ref={mapContainerRef}
-              className="relative h-[320px] w-full overflow-hidden rounded-xl bg-slate-100 md:h-[420px]"
+              className="relative h-[320px] w-full overflow-hidden bg-slate-100 md:h-[400px]"
             >
               {shouldLoadMap ? (
                 <iframe
                   src={MAP_EMBED_URL}
                   title="Lokasi Prime Rescue di Gunung Sindur, Bogor"
-                  className="h-full w-full border-0 rounded-xl"
+                  className="h-full w-full border-0"
                   referrerPolicy="no-referrer-when-downgrade"
                   allowFullScreen
                 />
               ) : (
-                <div className="animate-shimmer flex h-full w-full flex-col items-center justify-center gap-3 text-sm font-semibold text-slate-gray">
-                  <Icon name="map-pin" className="h-6 w-6 text-slate-400 animate-bounce" />
+                <div className="animate-shimmer flex h-full w-full flex-col items-center justify-center gap-2 text-sm font-medium text-slate-gray">
+                  <Icon name="map-pin" className="h-6 w-6 text-slate-400" />
                   <span>Memuat peta lokasi Prime Rescue...</span>
                 </div>
               )}
@@ -73,39 +73,39 @@ export default function ServiceArea() {
 
           <div className="mt-8 grid gap-6 md:grid-cols-2">
             {/* Priority Zone Card */}
-            <div className="rounded-2xl border border-slate-200/80 bg-clinical-white p-7 shadow-xs transition-all hover:shadow-md">
+            <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-xs">
               <div className="flex items-center gap-2.5">
-                <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-emerald-100 text-medical-green">
+                <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-emerald-50 text-medical-green">
                   <Icon name="check" className="h-4 w-4" />
                 </span>
-                <h3 className="text-lg font-bold text-navy-dark">
-                  Zona Prioritas
+                <h3 className="text-base font-bold text-navy-dark">
+                  Zona Prioritas (Respons Tercepat)
                 </h3>
               </div>
-              <ul className="mt-4 space-y-2.5">
+              <ul className="mt-4 space-y-2">
                 {PRIORITY_AREAS.map((area) => (
-                  <li key={area} className="flex items-center gap-2.5 text-base text-slate-gray">
-                    <span className="h-2 w-2 rounded-full bg-medical-green" />
-                    <span className="font-medium text-navy-dark">{area}</span>
+                  <li key={area} className="flex items-center gap-2 text-sm text-slate-gray">
+                    <span className="h-1.5 w-1.5 rounded-full bg-medical-green" />
+                    <span className="font-semibold text-navy-dark">{area}</span>
                   </li>
                 ))}
               </ul>
             </div>
 
             {/* Extended Coordination Zone Card */}
-            <div className="rounded-2xl border border-slate-200/80 bg-clinical-white p-7 shadow-xs transition-all hover:shadow-md">
+            <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-xs">
               <div className="flex items-center gap-2.5">
-                <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-red-100 text-emergency-red">
+                <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-red-50 text-emergency-red">
                   <Icon name="map-pin" className="h-4 w-4" />
                 </span>
-                <h3 className="text-lg font-bold text-navy-dark">
-                  Zona Koordinasi
+                <h3 className="text-base font-bold text-navy-dark">
+                  Zona Koordinasi & Antar Kota
                 </h3>
               </div>
-              <ul className="mt-4 space-y-2.5">
+              <ul className="mt-4 space-y-2">
                 {EXTENDED_AREAS.map((area) => (
-                  <li key={area} className="flex items-center gap-2.5 text-base text-slate-gray">
-                    <span className="h-2 w-2 rounded-full bg-emergency-red" />
+                  <li key={area} className="flex items-center gap-2 text-sm text-slate-gray">
+                    <span className="h-1.5 w-1.5 rounded-full bg-emergency-red" />
                     <span>{area}</span>
                   </li>
                 ))}
@@ -113,20 +113,15 @@ export default function ServiceArea() {
             </div>
           </div>
 
-          <p className="mt-8 text-center text-base text-slate-gray">
-            Untuk area di luar Gunung Sindur, hubungi kami untuk informasi
-            ketersediaan layanan.
-          </p>
-
-          <div className="mt-6 text-center">
+          <div className="mt-8 text-center">
             <a
               href={MAP_DIRECTIONS_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-tactile inline-flex h-11 w-full items-center justify-center gap-2 rounded-lg bg-navy-dark px-7 text-base font-semibold text-white shadow-3d transition-all hover:-translate-y-0.5 hover:bg-slate-800 hover:shadow-xl active:translate-y-0.5 sm:w-auto"
+              className="btn-tactile inline-flex h-11 items-center justify-center gap-2 rounded-lg border border-slate-300 bg-white px-6 text-sm font-semibold text-navy-dark shadow-xs transition-colors hover:bg-slate-50 active:translate-y-0.5"
             >
-              <Icon name="map-pin" className="h-4 w-4" />
-              Buka di Google Maps
+              <Icon name="map-pin" className="h-4 w-4 text-slate-gray" />
+              Petunjuk Arah Google Maps
             </a>
           </div>
         </div>

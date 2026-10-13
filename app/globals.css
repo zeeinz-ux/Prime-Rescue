@@ -40,48 +40,7 @@ body {
   animation: fade-in-up 0.6s ease-out forwards;
 }
 
-/* 3D & Micro-animation Utilities */
-@keyframes pulse-dot {
-  0%, 100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-  50% {
-    opacity: 0.35;
-    transform: scale(0.8);
-  }
-}
-
-.animate-pulse-dot {
-  animation: pulse-dot 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-}
-
-@keyframes float-slow {
-  0%, 100% {
-    transform: translateY(0px) rotate(0deg);
-  }
-  50% {
-    transform: translateY(-8px) rotate(0.5deg);
-  }
-}
-
-.animate-float-slow {
-  animation: float-slow 4.5s ease-in-out infinite;
-}
-
-@keyframes float-slow-reverse {
-  0%, 100% {
-    transform: translateY(0px) rotate(0deg);
-  }
-  50% {
-    transform: translateY(8px) rotate(-0.5deg);
-  }
-}
-
-.animate-float-slow-reverse {
-  animation: float-slow-reverse 5s ease-in-out infinite;
-}
-
+/* GPU-composited shimmer skeleton */
 @keyframes composited-shimmer {
   0%, 100% {
     opacity: 1;
@@ -95,35 +54,10 @@ body {
   animation: composited-shimmer 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
-.perspective-1000 {
-  perspective: 1000px;
-}
-
-.transform-3d {
-  transform-style: preserve-3d;
-}
-
-.shadow-3d {
-  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.12),
-              0 20px 25px -5px rgba(0, 0, 0, 0.08),
-              0 1px 3px 0 rgba(0, 0, 0, 0.05);
-}
-
-.shadow-3d-red {
-  box-shadow: 0 12px 30px -8px rgba(220, 38, 38, 0.35),
-              0 4px 12px -2px rgba(220, 38, 38, 0.2);
-}
-
-.shadow-3d-green {
-  box-shadow: 0 12px 30px -8px rgba(16, 185, 129, 0.35),
-              0 4px 12px -2px rgba(16, 185, 129, 0.2);
-}
-
 .btn-tactile {
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
 .btn-tactile:active {
-  transform: translateY(2px);
+  transform: translateY(1px);
 }
-

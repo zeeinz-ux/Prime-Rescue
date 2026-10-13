@@ -2,32 +2,30 @@ import Container from "@/components/ui/Container";
 import SectionHeading from "@/components/ui/SectionHeading";
 import Icon, { type IconName } from "@/components/ui/Icon";
 import { SERVICES } from "@/data/services";
+import { BUSINESS } from "@/data/businessInfo";
 
 export default function Services() {
   return (
-    <section id="layanan" className="relative overflow-hidden bg-clinical-white py-20 md:py-28">
+    <section id="layanan" className="relative bg-clinical-white py-16 md:py-24">
       <Container>
         <SectionHeading
-          title="Layanan Kami"
-          subtitle="Kami menyediakan berbagai layanan ambulans untuk memenuhi kebutuhan Anda."
+          title="Layanan Ambulans Kami"
+          subtitle="Pilihan transportasi medis darurat dan rujukan terencana di Gunung Sindur dan sekitarnya."
         />
-        <div className="perspective-1000 grid gap-6 md:grid-cols-2 lg:gap-8">
+        <div className="grid gap-6 md:grid-cols-2 lg:gap-8">
           {SERVICES.map((service) => (
             <div
               key={service.id}
-              className="group relative flex flex-col justify-between overflow-hidden rounded-2xl border border-slate-200/80 bg-white p-7 shadow-3d transition-all duration-300 hover:-translate-y-2 hover:border-slate-300 hover:shadow-2xl sm:p-8"
+              className="flex flex-col justify-between rounded-xl border border-slate-200 bg-white p-7 shadow-xs transition-colors hover:border-slate-300 sm:p-8"
             >
-              {/* Left border accent line on hover */}
-              <div className="absolute top-0 bottom-0 left-0 w-1 bg-emergency-red opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-
               <div>
-                <span className="flex h-14 w-14 items-center justify-center rounded-xl bg-red-50 text-emergency-red ring-4 ring-red-50/60 shadow-xs transition-transform duration-300 group-hover:scale-110">
+                <span className="flex h-12 w-12 items-center justify-center rounded-lg bg-red-50 text-emergency-red">
                   <Icon
                     name={service.icon as IconName}
-                    className="h-7 w-7"
+                    className="h-6 w-6"
                   />
                 </span>
-                <h3 className="mt-6 text-xl font-bold text-navy-dark transition-colors group-hover:text-emergency-red">
+                <h3 className="mt-5 text-xl font-bold text-navy-dark">
                   {service.title}
                 </h3>
                 <p className="mt-2.5 text-base leading-relaxed text-slate-gray">
@@ -35,10 +33,16 @@ export default function Services() {
                 </p>
               </div>
 
-              {/* Interactive subtle footer badge */}
-              <div className="mt-6 flex items-center gap-1.5 text-xs font-semibold text-emergency-red">
-                <span>Siap 24 Jam</span>
-                <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
+              <div className="mt-6 border-t border-slate-100 pt-4">
+                <a
+                  href={`${BUSINESS.whatsappLink}&text=${encodeURIComponent(`Halo Prime Rescue, saya butuh informasi ${service.title}`)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 text-sm font-semibold text-emergency-red hover:text-red-700"
+                >
+                  <span>Pesan Layanan Ini</span>
+                  <span aria-hidden="true">→</span>
+                </a>
               </div>
             </div>
           ))}
