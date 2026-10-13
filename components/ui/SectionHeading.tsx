@@ -12,10 +12,10 @@ export default function SectionHeading({
   const isDark = variant === "dark";
 
   return (
-    <div className="mx-auto mb-12 max-w-2xl text-center md:mb-16">
+    <div className="mx-auto mb-10 max-w-2xl text-center md:mb-14">
       <h2
         className={`text-3xl font-extrabold tracking-tight sm:text-4xl ${
-          isDark ? "text-white" : "text-navy-dark"
+          isDark ? "text-white" : "text-navy-dark dark:text-white"
         }`}
       >
         {title}
@@ -24,7 +24,7 @@ export default function SectionHeading({
       {subtitle ? (
         <p
           className={`mt-4 text-base leading-relaxed sm:text-lg ${
-            isDark ? "text-slate-300" : "text-slate-gray"
+            isDark ? "text-slate-300" : "text-slate-gray dark:text-slate-300"
           }`}
         >
           {subtitle}

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import Header from "@/components/sections/Header";
 import Footer from "@/components/sections/Footer";
@@ -56,8 +57,12 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="id" className={inter.variable}>
+    <html lang="id" className={inter.variable} suppressHydrationWarning>
       <body>
+        {/* Blocking theme script: must run before paint to avoid theme flash.
+            Plain <script src> inside a component trips React 19's validation,
+            so use next/script with beforeInteractive (root layout only). */}
+        <Script src="/theme.js" strategy="beforeInteractive" />
         <a
           href="#konten"
           className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-lg focus:bg-navy-dark focus:px-4 focus:py-2 focus:text-white"

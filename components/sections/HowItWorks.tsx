@@ -27,7 +27,7 @@ const STEPS = [
 
 export default function HowItWorks() {
   return (
-    <section id="cara-pesan" className="relative bg-white py-16 md:py-24">
+    <section id="cara-pesan" className="relative bg-white py-16 transition-colors duration-200 dark:bg-black md:py-24">
       <Container>
         <SectionHeading
           title="Cara Pesan Ambulans"
@@ -36,7 +36,7 @@ export default function HowItWorks() {
 
         {/* Mobile Vertical Timeline */}
         <div className="relative mx-auto max-w-lg md:hidden">
-          <div className="absolute top-4 bottom-4 left-5 -translate-x-1/2 border-l border-slate-200" />
+          <div className="absolute top-4 bottom-4 left-5 -translate-x-1/2 border-l border-slate-200 dark:border-neutral-800" />
 
           <ol className="space-y-6">
             {STEPS.map((step) => (
@@ -44,11 +44,11 @@ export default function HowItWorks() {
                 <span className="relative z-10 flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-emergency-red font-bold text-white shadow-xs">
                   {step.number}
                 </span>
-                <div className="flex-1 rounded-xl border border-slate-200 bg-clinical-white p-4">
-                  <h3 className="text-base font-bold text-navy-dark">
+                <div className="flex-1 rounded-xl border border-slate-200 bg-clinical-white p-4 dark:border-neutral-800 dark:bg-[#121212]">
+                  <h3 className="text-base font-bold text-navy-dark dark:text-white">
                     {step.title}
                   </h3>
-                  <p className="mt-1 text-sm leading-relaxed text-slate-gray">
+                  <p className="mt-1 text-sm leading-relaxed text-slate-gray dark:text-neutral-300">
                     {step.description}
                   </p>
                 </div>
@@ -70,10 +70,10 @@ export default function HowItWorks() {
                 </span>
 
                 <div className="mt-4">
-                  <h3 className="text-base font-bold text-navy-dark">
+                  <h3 className="text-base font-bold text-navy-dark dark:text-white">
                     {step.title}
                   </h3>
-                  <p className="mt-2 text-sm leading-relaxed text-slate-gray">
+                  <p className="mt-2 text-sm leading-relaxed text-slate-gray dark:text-neutral-300">
                     {step.description}
                   </p>
                 </div>

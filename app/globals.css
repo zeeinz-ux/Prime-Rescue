@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   --color-emergency-red: #dc2626;
   --color-navy-dark: #1e293b;
@@ -22,9 +24,125 @@ html {
 }
 
 body {
-  @apply bg-white font-sans text-navy-dark antialiased;
+  @apply bg-white font-sans text-navy-dark antialiased transition-colors duration-200;
 }
 
+/* ==========================================================================
+   PITCH BLACK / OLED DARK THEME SYSTEM
+   ========================================================================== */
+.dark,
+html.dark {
+  color-scheme: dark;
+  --color-clinical-white: #000000;
+  --color-background-soft: #080808;
+  --color-navy-dark: #ffffff;
+  --color-slate-gray: #a3a3a3;
+  --color-border-light: #262626;
+}
+
+.dark body {
+  background-color: #000000 !important;
+  color: #f5f5f5 !important;
+}
+
+/* Header */
+.dark header {
+  background-color: rgba(0, 0, 0, 0.95) !important;
+  border-bottom-color: #262626 !important;
+}
+.dark header a {
+  color: #ffffff;
+}
+.dark header nav a {
+  color: #d4d4d4 !important;
+}
+.dark header nav a:hover {
+  color: #ef4444 !important;
+}
+
+/* All Sections Backgrounds -> Pitch Black OLED */
+.dark section,
+.dark section.bg-clinical-white,
+.dark section.bg-white,
+.dark #beranda,
+.dark #info,
+.dark #layanan,
+.dark #keunggulan,
+.dark #galeri,
+.dark #jangkauan,
+.dark #cara-pesan,
+.dark #faq,
+.dark #kontak {
+  background-color: #000000 !important;
+}
+
+/* Section divider borders for dark mode */
+.dark #keunggulan,
+.dark footer,
+.dark #kontak {
+  border-top: 1px solid #262626 !important;
+  border-bottom: 1px solid #262626 !important;
+}
+
+/* All Cards & Elevated Surfaces in Dark Mode */
+.dark .bg-white,
+.dark div.bg-clinical-white {
+  background-color: #121212 !important;
+}
+.dark .bg-slate-50,
+.dark .bg-slate-100 {
+  background-color: #1c1c1c !important;
+}
+
+/* Borders */
+.dark .border-slate-200,
+.dark .border-slate-300,
+.dark .border-slate-100 {
+  border-color: #262626 !important;
+}
+
+/* Typography Hierarchy in Dark Mode */
+.dark .text-navy-dark {
+  color: #ffffff !important;
+}
+.dark .text-slate-gray {
+  color: #a3a3a3 !important;
+}
+.dark .text-slate-600,
+.dark .text-slate-700 {
+  color: #d4d4d4 !important;
+}
+.dark h1,
+.dark h2,
+.dark h3 {
+  color: #ffffff !important;
+}
+
+/* Specific Buttons and Badges */
+.dark .btn-tactile.border-slate-300 {
+  background-color: #171717 !important;
+  border-color: #262626 !important;
+  color: #ffffff !important;
+}
+.dark .btn-tactile.border-slate-300:hover {
+  background-color: #222222 !important;
+}
+
+/* Map skeleton in dark mode */
+.dark .bg-slate-100 {
+  background-color: #171717 !important;
+}
+
+/* Details/Summary FAQ */
+.dark details summary span {
+  color: #ffffff !important;
+}
+.dark details[open] {
+  background-color: #141414 !important;
+  border-color: #333333 !important;
+}
+
+/* Micro-animations */
 @keyframes fade-in-up {
   from {
     opacity: 0;
@@ -40,7 +158,6 @@ body {
   animation: fade-in-up 0.6s ease-out forwards;
 }
 
-/* GPU-composited shimmer skeleton */
 @keyframes composited-shimmer {
   0%, 100% {
     opacity: 1;

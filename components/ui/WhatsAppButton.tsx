@@ -23,7 +23,7 @@ export default function WhatsAppButton({
       ? "bg-emergency-red text-white hover:bg-red-700 shadow-sm hover:shadow"
       : variant === "emerald"
       ? "bg-emerald-600 text-white hover:bg-emerald-700 shadow-sm hover:shadow"
-      : "bg-white text-emergency-red hover:bg-slate-50 shadow-sm";
+      : "bg-white text-emergency-red hover:bg-slate-50 shadow-sm dark:bg-emergency-red dark:text-white dark:hover:bg-red-700";
 
   return (
     <a

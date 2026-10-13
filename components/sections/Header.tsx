@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Container from "@/components/ui/Container";
 import Icon from "@/components/ui/Icon";
+import ThemeToggle from "@/components/ui/ThemeToggle";
 import { BUSINESS } from "@/data/businessInfo";
 import { trackWhatsAppClick } from "@/lib/gtag";
 
@@ -36,14 +37,14 @@ export default function Header() {
 
   return (
     <header
-      className={`sticky top-0 z-50 transition-shadow duration-200 border-b border-slate-200 bg-white/95 backdrop-blur-md ${
+      className={`sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur-md transition-colors duration-200 dark:border-neutral-800 dark:bg-black/95 ${
         scrolled ? "shadow-xs" : ""
       }`}
     >
       <Container className="flex h-16 items-center justify-between">
         <a
           href="#beranda"
-          className="flex items-center gap-2 text-lg font-bold text-navy-dark"
+          className="flex items-center gap-2 text-lg font-bold text-navy-dark dark:text-white"
         >
           <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-emergency-red text-white">
             <Icon name="cross" className="h-5 w-5" />
@@ -56,14 +57,16 @@ export default function Header() {
             <a
               key={link.href}
               href={link.href}
-              className="text-sm font-semibold text-slate-700 transition-colors hover:text-emergency-red"
+              className="text-sm font-semibold text-slate-700 transition-colors hover:text-emergency-red dark:text-neutral-300 dark:hover:text-emergency-red"
             >
               {link.label}
             </a>
           ))}
         </nav>
 
-        <div className="hidden md:block">
+        {/* Desktop Actions */}
+        <div className="hidden items-center gap-3 md:flex">
+          <ThemeToggle />
           <a
             href={BUSINESS.whatsappLink}
             target="_blank"
@@ -76,20 +79,24 @@ export default function Header() {
           </a>
         </div>
 
-        <button
-          type="button"
-          onClick={() => setOpen((v) => !v)}
-          className="flex h-10 w-10 items-center justify-center rounded-lg border border-slate-200 text-navy-dark md:hidden"
-          aria-label={open ? "Tutup menu" : "Buka menu"}
-          aria-expanded={open}
-        >
-          <Icon name={open ? "close" : "menu"} className="h-5 w-5" />
-        </button>
+        {/* Mobile Actions */}
+        <div className="flex items-center gap-2 md:hidden">
+          <ThemeToggle />
+          <button
+            type="button"
+            onClick={() => setOpen((v) => !v)}
+            className="flex h-10 w-10 items-center justify-center rounded-lg border border-slate-200 text-navy-dark transition-colors dark:border-neutral-800 dark:bg-[#151515] dark:text-neutral-100"
+            aria-label={open ? "Tutup menu" : "Buka menu"}
+            aria-expanded={open}
+          >
+            <Icon name={open ? "close" : "menu"} className="h-5 w-5" />
+          </button>
+        </div>
       </Container>
 
       {open ? (
         <nav
-          className="border-t border-slate-200 bg-white md:hidden"
+          className="border-t border-slate-200 bg-white dark:border-neutral-800 dark:bg-black md:hidden"
           aria-label="Navigasi mobile"
         >
           <Container className="flex flex-col gap-1 py-4">
@@ -98,7 +105,7 @@ export default function Header() {
                 key={link.href}
                 href={link.href}
                 onClick={() => setOpen(false)}
-                className="rounded-lg px-3 py-2 text-base font-semibold text-slate-700 transition-colors hover:bg-slate-50 hover:text-emergency-red"
+                className="rounded-lg px-3 py-2 text-base font-semibold text-slate-700 transition-colors hover:bg-slate-50 hover:text-emergency-red dark:text-neutral-300 dark:hover:bg-[#121212] dark:hover:text-emergency-red"
               >
                 {link.label}
               </a>

@@ -50,14 +50,14 @@ export default function Gallery() {
   };
 
   return (
-    <section id="galeri" className="relative bg-white py-16 md:py-24">
+    <section id="galeri" className="relative bg-white py-16 transition-colors duration-200 dark:bg-slate-950 md:py-24">
       <Container>
         <SectionHeading
           title="Galeri Armada & Tim"
           subtitle="Dokumentasi armada ambulans dan kesiapan tim Prime Rescue di lapangan."
         />
 
-        <div className="mx-auto max-w-4xl overflow-hidden rounded-2xl border border-slate-200 bg-navy-dark shadow-sm">
+        <div className="mx-auto max-w-4xl overflow-hidden rounded-2xl border border-slate-200 bg-navy-dark shadow-sm dark:border-slate-800">
           <div
             className="group relative overflow-hidden"
             onMouseEnter={() => setIsPaused(true)}

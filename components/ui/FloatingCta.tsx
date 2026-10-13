@@ -16,7 +16,7 @@ export default function FloatingCta() {
         onClick={() => trackPhoneClick("floating_cta")}
         aria-label={`Panggilan telepon darurat ${BUSINESS.whatsappDisplay}`}
         title="Panggilan Telepon Darurat"
-        className="btn-tactile flex h-12 w-12 items-center justify-center rounded-full bg-navy-dark text-white shadow-lg transition-all hover:bg-slate-800 active:translate-y-0.5"
+        className="btn-tactile flex h-12 w-12 items-center justify-center rounded-full bg-navy-dark text-white shadow-lg transition-all hover:bg-slate-800 active:translate-y-0.5 dark:border dark:border-neutral-800 dark:bg-[#151515] dark:hover:bg-[#222]"
       >
         <Icon name="phone" className="h-5 w-5 text-white" />
       </a>
