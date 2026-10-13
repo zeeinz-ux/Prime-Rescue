@@ -13,6 +13,7 @@ export default function Footer() {
   return (
     <footer className="bg-navy-dark pb-8 pt-16 text-white">
       <Container>
+        <h2 className="sr-only">Informasi Tambahan dan Kontak Footer</h2>
         <div className="grid gap-10 md:grid-cols-3">
           <div>
             <div className="flex items-center gap-2 text-lg font-semibold">

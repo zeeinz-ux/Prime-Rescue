@@ -29,6 +29,7 @@ export default function QuickInfo() {
   return (
     <section id="info" className="relative -mt-6 z-20 py-8 md:py-12">
       <Container>
+        <h2 className="sr-only">Ringkasan Layanan Cepat Prime Rescue</h2>
         <div className="perspective-1000 grid gap-6 md:grid-cols-3">
           {QUICK_INFO.map((item) => (
             <div

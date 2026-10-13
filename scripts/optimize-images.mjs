@@ -15,11 +15,12 @@ async function optimize() {
     const image = sharp(buffer);
     const metadata = await image.metadata();
 
-    // Resize hero image & gallery to max 1200px width with quality 80
-    const targetWidth = Math.min(metadata.width || 1200, 1200);
+    // Resize hero image & gallery to max 800px width with quality 75
+    // Perfect for mobile & retina display up to 400px container width (savings > 50%)
+    const targetWidth = Math.min(metadata.width || 800, 800);
     const optimizedBuffer = await sharp(buffer)
       .resize({ width: targetWidth, withoutEnlargement: true })
-      .webp({ quality: 80, effort: 6 })
+      .webp({ quality: 75, effort: 6 })
       .toBuffer();
 
     fs.writeFileSync(filePath, optimizedBuffer);
