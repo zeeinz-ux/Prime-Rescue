@@ -1,76 +1,60 @@
 # Prime Rescue
 
-Landing page layanan ambulans 24 jam Prime Rescue di Gunung Sindur, Bogor. Dibangun dengan Next.js 16 (App Router), TypeScript, dan Tailwind CSS v4.
+Landing page layanan ambulans 24 jam di Gunung Sindur, Bogor.
+Live: **https://primerescue.web.id**
+
+Dibangun dengan Next.js 16 (App Router), React 19, TypeScript, dan Tailwind CSS v4.
 
 ## Fitur
 
-- Single-page dengan 9 section: Hero, Quick Info, Layanan, Kenapa Kami, Area Layanan, Cara Kerja, FAQ, CTA, Footer.
-- Header dengan efek transisi: transparan di posisi atas, menjadi blur saat di-scroll.
-- Desain responsif: mobile-friendly dengan breakpoint sm/md/lg, tata letak grid, dan maksimal lebar container 1200px.
-- SEO lokal: metadata dinamis, sitemap, robots.txt, JSON-LD, serta integrasi OpenGraph dan Twitter Card.
-- Analitik: Google Analytics dengan pelacakan klik WhatsApp dan scroll tracking.
+- Single page dengan 9 section: Hero, Quick Info, Layanan, Kenapa Kami, Galeri, Area Layanan, Cara Kerja, FAQ, CTA — plus Header, Footer, dan tombol WhatsApp melayang yang tampil global.
+- Dark mode dengan toggle di Header (tersimpan di `localStorage`, tanpa flash saat load).
+- Responsif mobile-first, lebar kontainer maksimal 1200px.
+- SEO lokal: metadata, sitemap, robots.txt, JSON-LD (`EmergencyService`), OpenGraph/Twitter Card.
+- Analitik: Google Analytics dengan pelacakan klik WhatsApp/telepon dan kedalaman scroll.
 
 ## Stack
 
 | Bagian | Teknologi |
 |---|---|
-| Framework | Next.js 16.3.5 (App Router, Turbopack) |
+| Framework | Next.js 16.3.5 (App Router) |
 | Bahasa | TypeScript |
 | UI | React 19 |
-| Styling | Tailwind CSS v4 (@theme di app/globals.css) |
-| Font | Inter (next/font/google) |
-
-Catatan Tailwind v4: Tidak menggunakan `tailwind.config.js`. Deklarasi design token dilakukan melalui `@theme` di `app/globals.css`.
-
-## Struktur Folder
-
-```
-app/
-  layout.tsx          # Metadata SEO, Header (global)
-  page.tsx            # Komposisi section
-  globals.css         # Styling @theme
-  sitemap.ts          # Sitemaps
-  robots.ts           # Robots.txt
-components/
-  sections/           # Komponen tiap section
-  ui/                 # Komponen UI bersama
-  seo/                # SEO dan Analytics
-data/
-  businessInfo.ts     # Data kontak, alamat, dan jam operasional
-  services.ts         # Data layanan
-  faqs.ts             # Data FAQ
-  gallery.ts          # Data galeri
-lib/
-  gtag.ts             # Tracking analitik
-public/
-  images/             # Aset gambar
-```
-
-## Data Kontak
-
-Gunakan `data/businessInfo.ts` sebagai sumber utama untuk data kontak (WhatsApp, alamat, jam). Jangan melakukan hardcode data di komponen.
-
-- WhatsApp: 0857-7091-8098 (https://wa.me/6285770918098)
-- Pelacakan klik WhatsApp menggunakan `trackWhatsAppClick()` di `lib/gtag.ts`.
+| Styling | Tailwind CSS v4 (token `@theme` di `app/globals.css`, tanpa `tailwind.config.js`) |
+| Font | Inter (`next/font/google`) |
 
 ## Menjalankan Proyek
 
 ```bash
 npm install
-npm run dev        # Jalankan server pengembangan
-npm run build      # Build untuk produksi
-npm run start      # Jalankan build produksi
-npm run lint       # Cek standar kode (harus bebas error sebelum push)
+npm run dev        # server pengembangan
+npm run build      # build produksi (static export ke folder out/)
+npm run lint       # cek kode, harus bersih sebelum push
 ```
 
-Pastikan menjalankan `npm run lint && npm run build` sebelum melakukan push.
+Verifikasi sebelum push:
+
+```bash
+npm run lint && npm run build
+```
+
+Aktifkan analitik secara lokal bila perlu (opsional, tanpa ini tracking diam):
+
+```bash
+# .env.local (jangan di-commit)
+NEXT_PUBLIC_GA_MEASUREMENT_ID=G-XXXXXXXXXX
+```
+
+## Konvensi Penting
+
+- **Sumber data tunggal:** `data/businessInfo.ts` (diekspos sebagai `BUSINESS`) untuk WhatsApp, telepon, alamat, dan jam operasional. Jangan hardcode data kontak di komponen.
+- **Brand:** selalu "Prime Rescue", bukan "Prima".
+- **Konten:** Bahasa Indonesia, header section Title Case.
+- `public/og.png` adalah gambar raster dengan teks brand — bila brand/nomor/tagline berubah, gambarnya harus dibuat ulang, bukan cuma edit kode.
 
 ## Deployment
 
-### Vercel
-Gunakan framework preset Next.js.
+Hanya via **GitHub Pages + custom domain** (`primerescue.web.id`):
 
-### GitHub Pages
-Menggunakan static export (`output: "export"` di `next.config.ts`).
-- Konfigurasi `images: { unoptimized: true }` di `next.config.ts` diperlukan.
-- Deployment menggunakan GitHub Actions yang mengunggah folder `out/`.
+- Push ke branch `main` memicu workflow `.github/workflows/nextjs.yml` (build `next build` → upload folder `out/`).
+- `next.config.ts` memakai static export (`output: "export"`) dan **tanpa `basePath`** karena domain diserve dari root. Jangan tambahkan `basePath` atau opsi `static_site_generator: next`.
