@@ -34,6 +34,13 @@ function localBusinessSchema() {
     areaServed: [
       { "@type": "City", name: "Gunung Sindur" },
       { "@type": "City", name: "Bogor" },
+      { "@type": "City", name: "Parung" },
+      { "@type": "City", name: "Rumpin" },
+      { "@type": "City", name: "Ciseeng" },
+      { "@type": "City", name: "Depok" },
+      { "@type": "City", name: "Jakarta Selatan" },
+      { "@type": "City", name: "Tangerang Selatan" },
+      { "@type": "City", name: "Pamulang" },
     ],
     geo: {
       "@type": "GeoCoordinates",

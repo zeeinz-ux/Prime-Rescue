@@ -9,9 +9,11 @@ import { BUSINESS } from "@/data/businessInfo";
 const PRIORITY_AREAS = ["Gunung Sindur", "Bogor"];
 
 const EXTENDED_AREAS = [
-  "Daerah sekitar Bogor",
+  "Parung, Rumpin & Ciseeng",
   "Kota Depok",
   "Jakarta Selatan",
+  "Tangerang Selatan & Pamulang",
+  "Jabodetabek (Koordinasi Antar Kota)",
 ];
 
 const MAP_EMBED_URL = BUSINESS.mapsEmbedUrl;
@@ -44,7 +46,7 @@ export default function ServiceArea() {
       <Container>
         <SectionHeading
           title="Area Pelayanan Kami"
-          subtitle="Pos siaga di Gunung Sindur melayani penjemputan cepat wilayah Bogor dan sekitarnya."
+          subtitle="Pos siaga di Gunung Sindur melayani penjemputan cepat wilayah Bogor, Depok, Jakarta Selatan, Tangerang Selatan, dan Jabodetabek sekitarnya."
         />
 
         <div className="mx-auto max-w-4xl">
